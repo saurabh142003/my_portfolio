@@ -74,7 +74,8 @@ const EducationExperience = () => {
         <div className={styles.list}>
           {experience.map((item, index) => (
             <div key={index} style={{ display: 'flex', gap: 20 }}>
-              {briefIcon}
+              {/* {briefIcon} */}
+              <p className={styles.emoji}>👨🏻‍💻 </p>
               <div>
                 <h3 className={styles.position}>{item.position}</h3>
                 <p className={styles.company}>{item.company}</p>
@@ -90,7 +91,8 @@ const EducationExperience = () => {
         <div className={styles.list}>
           {education.map((item, index) => (
             <div key={index} style={{ display: 'flex', gap: 20 }}>
-              {gradIcon}
+              {/* {gradIcon} */}
+              <p className={styles.emoji}>📖</p>
               <div>
                 <h3 className={styles.position}>{item.position}</h3>
                 <p className={styles.company}>{item.company}</p>

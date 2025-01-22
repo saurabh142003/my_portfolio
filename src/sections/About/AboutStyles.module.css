@@ -63,6 +63,9 @@
     right: 0;
     width: 25px;
   }
+  .toggleButton{
+    margin:auto;
+  }
   
   .colorMode:hover {
     cursor: pointer;
@@ -71,7 +74,7 @@
   .description {
     max-width: 700px;
     align-items: center;
-    padding:10px
+    padding: 0px 10px 0px 10px;
   }
   
   .info {

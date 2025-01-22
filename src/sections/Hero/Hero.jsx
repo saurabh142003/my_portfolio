@@ -22,15 +22,15 @@ function Hero() {
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
-  const mailIcon = theme ==='light' ? <IoMailSharp/> : <IoMailOutline/>;
-  const instaIcon = theme === 'light' ? <FaInstagramSquare size={30} color='black'/>:<FaInstagram size={30} color='white'/>
+  const mailIcon = theme === 'light' ? <IoMailSharp /> : <IoMailOutline />;
+  const instaIcon = theme === 'light' ? <FaInstagramSquare size={30} color='black' /> : <FaInstagram size={30} color='white' />
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
         <img
           src={hello}
           className={styles.hero}
-          style={{borderRadius:'50%'}}
+          style={{ borderRadius: '50%' }}
           alt="Profile picture of Harris Johnsen"
         />
         <img
@@ -61,10 +61,14 @@ function Hero() {
             {instaIcon}
           </a>
         </span>
-        <p className={styles.description}>
-          With a passion for developing modern web apps for commercial
-          businesses.
-        </p>
+        <div className={styles.passion}>
+          <p className={styles.description}>
+            With a passion for developing modern web apps for commercial
+            businesses.
+          </p>
+
+        </div>
+
         <a href={CV} download>
           <button className="hover">Resume</button>
         </a>

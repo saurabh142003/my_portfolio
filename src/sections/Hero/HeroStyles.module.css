@@ -66,10 +66,16 @@
 .colorMode:hover {
   cursor: pointer;
 }
-
+.passion{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 .description {
-  max-width: 50ch;
+  max-width: 400px;
   text-align: center;
+  padding:10px;
+  /* background-color:red; */
 }
 
 .info {
